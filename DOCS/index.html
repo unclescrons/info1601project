@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Website with Navbar and Slideshow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    
+    <div class="navbar-toggle" onclick="toggleNavbar()">
+      <div class="navbar-toggle-line"></div>
+      <div class="navbar-toggle-line"></div>
+      <div class="navbar-toggle-line"></div>
+    </div>
+  <ul>
+    
+      <button id="filterBtn">Filter By Type</button>
+    <div id="searchBarContainer">
+        <input type="text" id="searchBar" placeholder="Search by Type">
+        <button id="searchBtn">Search</button>
+    </div>
+
+     <<div class="sort-btn-container">
+      <div id="SortBtn" onclick="toggleSortOptions()">Sort by <i class="fas fa-caret-down"></i></div>
+      <div id="sortOptions" class="sort-options">
+        <button onclick="sortAlphabetically()">Alphabetical Order</button>
+        <button onclick="sortByHeight()">Height</button>
+        <button onclick="sortByWeight()">Weight</button>
+      </div>
+    </div>
+    
+    <li><a href="#"></a></li>
+    
+  </ul>
+
+    <div class="navbar-logo">
+  <h1>PokeMaster</h1>
+</div>
+<div class="navbar-search">
+  <div class="search-icon" onclick="toggleSearchBar()">
+    <i class="fas fa-search"></i>
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <div class="search-icon">
+      <img src="search-icon.png" alt="">
+    </div>
+    <input type="text" class="search-input" placeholder="Search..." oninput="searchPokemon()">
+  </div>
+</div>
+    
+  </nav>
+
+  
+<div class="slideshow">
+    <div class="slide">
+      <img class="pokemonImage" src="" alt="Pokemon Image">
+      <h2 class="pokemonName">Loading...</h2>
+      <a class="pokemonButton" href="" target="_blank">Learn More</a>
+    </div>
+    <div class="slide">
+      <img class="pokemonImage" src="" alt="Pokemon Image">
+      <h2 class="pokemonName">Loading...</h2>
+      <a class="pokemonButton" href="" target="_blank">Learn More</a>
+    </div>
+    <div class="slide">
+      <img class="pokemonImage" src="" alt="Pokemon Image">
+      <h2 class="pokemonName">Loading...</h2>
+      <a class="pokemonButton" href="" target="_blank">Learn More</a>
+    </div>
+    <div class="slide">
+      <img class="pokemonImage" src="" alt="Pokemon Image">
+      <h2 class="pokemonName">Loading...</h2>
+      <a class="pokemonButton" href="" target="_blank">Learn More</a>
+    </div>
+    <div class="slide">
+      <img class="pokemonImage" src="" alt="Pokemon Image">
+      <h2 class="pokemonName">Loading...</h2>
+      <a class="pokemonButton" href="" target="_blank">Learn More</a>
+    </div>
+  </div>
+  <div class="slideshow-controls">
+    <button class="slideshow-prev">Previous</button>
+    <div class="dots-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <button class="slideshow-next">Next</button>
+  </div>
+  
+ <div class="card-container" id="card-container">
+</div>
+  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
